@@ -1,0 +1,22 @@
+.left{
+    width: 400px;
+    height: 400px;
+    background-image: url('../../../../public/nirmali1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.right{
+    height: 400px;
+    width: 700px;
+    padding: 20px;
+}
+.about{
+    display: flex;
+    padding: 20px;
+}
+
+td{
+    width: 250px;
+    font-style: italic;
+    
+}

@@ -1,6 +1,20 @@
 .profile img{
     opacity: 10px;
 }
-.container{
-    
+.home{
+    width: 900px;
+    height: 400px;
+    background-color: black;
+    text-align: left;
+    padding-top: 100px;
+    padding-left: 50px;
+ 
+}
+
+.profile{
+    width: 300px;
+    height: 400px;
+    background-color: aliceblue;
+    background-image: url('../../../../public/logo1.jpg');
+    background-repeat: no-repeat;
 }
