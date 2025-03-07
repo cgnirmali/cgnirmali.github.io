@@ -4,6 +4,10 @@
     background-image: url('../../../../public/nirmali1.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 50px;
+    border-color: black;
+    
+    animation: glow-image 1.5s infinite alternate;
 }
 .right{
     height: 400px;
@@ -20,3 +24,20 @@ td{
     font-style: italic;
     
 }
+.btn-cv{
+    outline-color: aqua;
+    border-radius: 10px 10px 10px 10px;
+    background-color: black;
+    color: aliceblue;
+}
+@keyframes glow-image {
+    0% {
+      box-shadow: 0 0 5px #00ffcc;
+    }
+    50% {
+      box-shadow: 0 0 15px #00ffcc;
+    }
+    100% {
+      box-shadow: 0 0 5px #00ffcc;
+    }
+  }

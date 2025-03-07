@@ -1,20 +1,59 @@
-.profile img{
-    opacity: 10px;
-}
-.home{
-    width: 900px;
-    height: 400px;
-    background-color: black;
-    text-align: left;
-    padding-top: 100px;
-    padding-left: 50px;
- 
+/* 🌟 General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  animation: body-glow 2s infinite alternate; /* Add glowing animation to body */
 }
 
-.profile{
-    width: 300px;
-    height: 400px;
-    background-color: aliceblue;
-    background-image: url('../../../../public/logo1.jpg');
-    background-repeat: no-repeat;
+/* 🌟 Home Section (No Glow) */
+.home {
+  width: 900px;
+  height: 400px;
+  background-color: black;
+  text-align: left;
+  padding-top: 100px;
+  padding-left: 50px;
+  border-radius: 20px;
+  box-shadow: none; /* Remove glow effect from home section */
+}
+
+/* 🌟 Glowing Text */
+.home h5, .home p {
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+  transition: text-shadow 0.5s ease-in-out;
+}
+
+.home h5:hover, .home p:hover {
+  text-shadow: 0 0 15px #00ffcc, 0 0 30px #00ffcc;
+}
+
+/* 🌟 Profile Section */
+.profile {
+  width: 300px;
+  height: 400px;
+  background-color: aliceblue;
+  background-image: url('../../../../public/logo1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  animation: glow-image 1.5s infinite alternate;
+}
+
+/* 🌟 Keyframes for Body Glow */
+
+
+/* 🌟 Keyframes for Profile Image Glow */
+@keyframes glow-image {
+  0% {
+    box-shadow: 0 0 5px #00ffcc;
+  }
+  50% {
+    box-shadow: 0 0 15px #00ffcc;
+  }
+  100% {
+    box-shadow: 0 0 5px #00ffcc;
+  }
 }

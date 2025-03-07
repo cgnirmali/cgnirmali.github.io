@@ -1,0 +1,7 @@
+C:\Users\Nirmali\Desktop\example_question\example_question\bin\Debug\example_question.exe.config
+C:\Users\Nirmali\Desktop\example_question\example_question\bin\Debug\example_question.exe
+C:\Users\Nirmali\Desktop\example_question\example_question\bin\Debug\example_question.pdb
+C:\Users\Nirmali\Desktop\example_question\example_question\obj\Debug\example_question.csproj.AssemblyReference.cache
+C:\Users\Nirmali\Desktop\example_question\example_question\obj\Debug\example_question.csproj.CoreCompileInputs.cache
+C:\Users\Nirmali\Desktop\example_question\example_question\obj\Debug\example_question.exe
+C:\Users\Nirmali\Desktop\example_question\example_question\obj\Debug\example_question.pdb

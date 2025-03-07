@@ -8,6 +8,7 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { SkillComponent } from '../../components/skill/skill.component';
 import { WorksComponent } from '../../components/works/works.component';
 import { DashboardComponent } from './dashboard.component';
+import { ContactComponent } from '../../components/contact/contact.component';
 
 const routes: Routes = [{
   path: '',
@@ -37,6 +38,10 @@ const routes: Routes = [{
       path:'works',
       component:WorksComponent
     },
+    {
+      path:'contact',
+      component:ContactComponent
+    }
   ]
 }];
 

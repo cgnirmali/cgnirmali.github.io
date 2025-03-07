@@ -1,1 +1,24 @@
-<p>skill works!</p>
+<h2>Skills</h2>
+<div class="container">
+ 
+    
+        <div class="left">
+        
+        </div>
+        <div class="right">
+          <div *ngFor="let skill of skills" class="progress-item">
+            <svg viewBox="0 0 100 100" class="circular-progress">
+              <circle cx="50" cy="50" r="40" class="background-circle"></circle>
+              <circle cx="50" cy="50" r="40" class="progress-circle"
+                [attr.stroke-dasharray]="'251.2'"
+                [attr.stroke-dashoffset]="251.2 - (251.2 * skill.value) / 100">
+              </circle>
+              <text x="50" y="50" text-anchor="middle" class="progress-text">{{ skill.value }}%</text>
+            </svg>
+            <p>{{ skill.name }}</p>
+          </div>
+        </div>
+      
+    
+  </div>
+  

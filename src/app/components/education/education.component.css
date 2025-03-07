@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    margin: 20px;
+    padding: 10px;
+}
+.left{
+    background-image: url("../../../../public/education.jpg");
+    width: 400px;
+    height: 400px;
+    padding-right: 20px;
+    animation: glow-image 1.5s infinite alternate;
+}
+.right{
+    
+    display: flex;
+    padding-left: 120px;
+    height: 400px;
+    width: 600px;
+}
+.educationset{
+    background-image: url("../../../../public/educationset3.png");
+    width: 100px;
+    height: 550px;
+    background-repeat: no-repeat;
+    
+    
+}
+.set{
+    padding-bottom: 20px;
+}
+.set1{
+    padding-bottom: 10px;
+}
+table{
+}
+td{
+    width: 450px;
+    font-style: italic;
+    font-size: 15px;
+
+}
+@keyframes glow-image {
+    0% {
+      box-shadow: 0 0 5px #00ffcc;
+    }
+    50% {
+      box-shadow: 0 0 15px #00ffcc;
+    }
+    100% {
+      box-shadow: 0 0 5px #00ffcc;
+    }
+  }

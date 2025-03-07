@@ -1,1 +1,38 @@
-<p>contact works!</p>
+<div class="container">
+    <h2>Contact Us</h2>
+    
+   <div class="sub-container">
+    <div class="left">
+
+    </div>
+    <div class="right">
+        <form [formGroup]="contactForm" (ngSubmit)="submitForm()" *ngIf="!submitted">
+            <label for="name">Name:</label>
+            <input id="name" type="text" formControlName="name" />
+            <div class="error" *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+              Name is required (Min: 3 characters).
+            </div>
+        
+            <label for="email">Email:</label>
+            <input id="email" type="email" formControlName="email" />
+            <div class="error" *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+              Enter a valid email.
+            </div>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" formControlName="message"></textarea>
+            <div class="error" *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+              Message is required (Min: 10 characters).
+            </div>
+        
+            <button type="submit" [disabled]="contactForm.invalid">Submit</button>
+          </form>
+    </div>
+   </div>
+  
+    <div class="success-message" *ngIf="submitted">
+      <h3>Thank you for contacting us!</h3>
+      <p>We will get back to you soon.</p>
+    </div>
+  </div>
+  
